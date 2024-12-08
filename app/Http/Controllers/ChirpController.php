@@ -1,20 +1,19 @@
 <?php
-
 namespace App\Http\Controllers;
-
+ 
 use App\Models\Chirp;
-use Illuminate\Http\Request;
-
+use Illuminate\Http\Request; 
+use Illuminate\Http\Response; 
+ 
 class ChirpController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(): Response 
     {
-        //
+        return response('Hello, World!');
     }
-
     /**
      * Show the form for creating a new resource.
      */
@@ -22,7 +21,7 @@ class ChirpController extends Controller
     {
         //
     }
-
+ 
     /**
      * Store a newly created resource in storage.
      */
@@ -30,7 +29,7 @@ class ChirpController extends Controller
     {
         //
     }
-
+ 
     /**
      * Display the specified resource.
      */
@@ -38,7 +37,7 @@ class ChirpController extends Controller
     {
         //
     }
-
+ 
     /**
      * Show the form for editing the specified resource.
      */
@@ -46,7 +45,7 @@ class ChirpController extends Controller
     {
         //
     }
-
+ 
     /**
      * Update the specified resource in storage.
      */
@@ -54,7 +53,7 @@ class ChirpController extends Controller
     {
         //
     }
-
+ 
     /**
      * Remove the specified resource from storage.
      */
@@ -62,4 +61,5 @@ class ChirpController extends Controller
     {
         //
     }
+ 
 }
